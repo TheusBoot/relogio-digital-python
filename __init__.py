@@ -8,7 +8,7 @@ def relogio_digital():
     agora = time("%H:%M:%S")
     if relogio['text'] != agora:
         relogio['text'] = agora
-    relogio.after(100,tictac)
+    relogio.after(100,relogio_digital)
 
 relogio_digital()
 relogio.mainloop()
